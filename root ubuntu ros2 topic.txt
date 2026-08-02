@@ -1,0 +1,169 @@
+root@ubuntu:/# ros2 topic echo /velodyne_points --once
+header:
+  stamp:
+    sec: 1785711426
+    nanosec: 573489664
+  frame_id: velodyne
+height: 1824
+width: 16
+fields:
+- name: x
+  offset: 0
+  datatype: 7
+  count: 1
+- name: y
+  offset: 4
+  datatype: 7
+  count: 1
+- name: z
+  offset: 8
+  datatype: 7
+  count: 1
+- name: intensity
+  offset: 12
+  datatype: 7
+  count: 1
+- name: ring
+  offset: 16
+  datatype: 4
+  count: 1
+- name: time
+  offset: 18
+  datatype: 7
+  count: 1
+is_bigendian: false
+point_step: 22
+row_step: 352
+data:
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 150
+- 215
+- 203
+- 189
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 1
+- 0
+- 44
+- 213
+- 203
+- 189
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 2
+- 0
+- 193
+- 210
+- 203
+- 189
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 3
+- 0
+- 87
+- 208
+- 203
+- 189
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 4
+- 0
+- 236
+- 205
+- 203
+- 189
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 0
+- 0
+- 192
+- 127
+- 5
+- 0
+- '...'
+is_dense: false
+---
+

@@ -1,0 +1,25 @@
+호스트 터미널
+xhost +local:root
+docker start ros2_env
+
+docker exec -it ros2_env bash
+source /opt/ros/jazzy/setup.bash
+ros2 run velodyne_driver velodyne_driver_node --ros-args -p model:=VLP16
+
+두 번째 터미널
+docker exec -it ros2_env bash
+source /opt/ros/jazzy/setup.bash
+ros2 run velodyne_pointcloud velodyne_transform_node --ros-args -p model:=VLP16 -p calibration:=/opt/ros/jazzy/share/velodyne_pointcloud/params/VLP16db.yaml
+
+세 번째 터미널
+docker exec -it ros2_env bash
+export LIBGL_ALWAYS_SOFTWARE=1
+source /opt/ros/jazzy/setup.bash
+rviz2
+
+
+데이터의 구조와 필드 형태만 가볍게 확인
+ros2 interface show sensor_msgs/msg/PointCloud2
+
+한 번만 딱 1개의 메시지만 끊어서 보기
+ros2 topic echo /velodyne_points --once
