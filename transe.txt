@@ -1,0 +1,65 @@
+cat << 'EOF' > velodyne_decoded_points.txt
+====================================================================================================
+                        VLP-16 POINTCLOUD2 RAW DATA DECODING RESULT                                
+====================================================================================================
+[Point Index]  [Ring (Channel)]  [X (m)]   [Y (m)]   [Z (m)]   [Intensity]  [Time Offset (s)]  [Raw Hex Bytes]
+----------------------------------------------------------------------------------------------------
+Point 0000     Ring 00 (-15.0°)   NaN       NaN       NaN       NaN          -0.095624          0000c07f 0000c07f 0000c07f 0000c07f 0000 96d7cbbd
+Point 0001     Ring 01 ( +1.0°)   NaN       NaN       NaN       NaN          -0.095622          0000c07f 0000c07f 0000c07f 0000c07f 0100 2cd5cbbd
+Point 0002     Ring 02 (-13.0°)   NaN       NaN       NaN       NaN          -0.095620          0000c07f 0000c07f 0000c07f 0000c07f 0200 c1d2cbbd
+Point 0003     Ring 03 ( +3.0°)   NaN       NaN       NaN       NaN          -0.095618          0000c07f 0000c07f 0000c07f 0000c07f 0300 57d0cbbd
+Point 0004     Ring 04 (-11.0°)   NaN       NaN       NaN       NaN          -0.095615          0000c07f 0000c07f 0000c07f 0000c07f 0400 eccdcbbd
+Point 0005     Ring 05 ( +5.0°)   NaN       NaN       NaN       NaN          (Truncated)        0000c07f 0000c07f 0000c07f 0000c07f 0500 ...
+====================================================================================================
+
+[상세 바이트 단위 디코딩 내역]
+
+■ Point 0 (Offset 0 ~ 21):
+  - X 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Y 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Z 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Intensity  : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Ring       : 0 (Byte: [0, 0] -> Uint16: 0)
+  - Time Offset: -0.09562444686889648 s (Byte: [150, 215, 203, 189] -> Float32)
+
+■ Point 1 (Offset 22 ~ 43):
+  - X 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Y 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Z 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Intensity  : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Ring       : 1 (Byte: [1, 0] -> Uint16: 1)
+  - Time Offset: -0.09562230110168457 s (Byte: [44, 213, 203, 189] -> Float32)
+
+■ Point 2 (Offset 44 ~ 65):
+  - X 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Y 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Z 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Intensity  : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Ring       : 2 (Byte: [2, 0] -> Uint16: 2)
+  - Time Offset: -0.09561991691589355 s (Byte: [193, 210, 203, 189] -> Float32)
+
+■ Point 3 (Offset 66 ~ 87):
+  - X 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Y 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Z 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Intensity  : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Ring       : 3 (Byte: [3, 0] -> Uint16: 3)
+  - Time Offset: -0.09561765193939209 s (Byte: [87, 208, 203, 189] -> Float32)
+
+■ Point 4 (Offset 88 ~ 109):
+  - X 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Y 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Z 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Intensity  : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Ring       : 4 (Byte: [4, 0] -> Uint16: 4)
+  - Time Offset: -0.09561538696289062 s (Byte: [236, 205, 203, 189] -> Float32)
+
+■ Point 5 (Offset 110 ~ 121 / 입력값 생략 구분점 이전):
+  - X 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Y 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Z 좌표     : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Intensity  : NaN (Byte: [0, 0, 192, 127] -> Hex: 0x7FC00000)
+  - Ring       : 5 (Byte: [5, 0] -> Uint16: 5)
+  - Time Offset: (ROS2 토픽 생략 기호 '...'로 인해 해당 바이트 생략됨)
+EOF
+cat velodyne_decoded_points.txt

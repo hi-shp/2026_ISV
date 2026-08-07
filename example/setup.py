@@ -1,4 +1,3 @@
-cat << 'EOF' > setup.py
 import os
 from glob import glob
 from setuptools import setup
@@ -28,4 +27,3 @@ setup(
         ],
     },
 )
-EOF

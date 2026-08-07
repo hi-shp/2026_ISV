@@ -1,5 +1,3 @@
-cd ~/ros2_ws/src/example/example
-cat << 'EOF' > talker.py
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
@@ -28,4 +26,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-EOF
